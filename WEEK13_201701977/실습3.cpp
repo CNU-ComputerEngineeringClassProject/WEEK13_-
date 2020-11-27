@@ -20,15 +20,15 @@ void bubble_sort(ForwardIterator first, ForwardIterator last, Compare comp) {
 
 class compGreater {
 public:
-	bool operator()(int firstOperation, int secondOperation) const {
-		return firstOperation > secondOperation;
+	bool operator()(int firstOperand, int secondOperand) const {
+		return firstOperand > secondOperand;
 	}
 };
 
 class compLess {
 public:
-	bool operator()(int firstOperation, int secondOperation) const {
-		return firstOperation < secondOperation;
+	bool operator()(int firstOperand, int secondOperand) const {
+		return firstOperand < secondOperand;
 	}
 };
 
